@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maujanjez - Life Hacks for Kenyans</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Maujanjez</h1>
+        <nav>
+            <ul>
+                <li><a href="#lifehacks">Life Hacks</a></li>
+                <li><a href="#submit">Submit a Hack</a></li>
+                <li><a href="#comments">Comments</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="lifehacks">
+            <h2>Explore Life Hacks</h2>
+            <div id="hacks-container"></div>
+        </section>
+        <section id="submit">
+            <h2>Submit Your Hack</h2>
+            <form id="submit-form">
+                <input type="text" name="title" placeholder="Hack Title" required>
+                <textarea name="description" placeholder="Describe your hack..." required></textarea>
+                <select name="category">
+                    <option value="finance">Finance</option>
+                    <option value="health">Health</option>
+                    <option value="education">Education</option>
+                    <option value="technology">Technology</option>
+                    <option value="lifestyle">Lifestyle</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="comments">
+            <h2>Community Comments</h2>
+            <form id="comment-form">
+                <textarea name="comment" placeholder="Add your comment..." required></textarea>
+                <button type="submit">Post Comment</button>
+            </form>
+            <div id="comments-container"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Maujanjez. All rights reserved.</p>
+    </footer>
+    <script src="static/js/app.js"></script>
+</body>
+</html>
